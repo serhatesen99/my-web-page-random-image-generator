@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6P8DNNLKTD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6P8DNNLKTD');
+</script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8223029666317869"
+     crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/logo.ico" />
+    <meta name="description" content="Gülmekten Kudurtan Karikatürler" />
+    <meta name="keywords" content="mizah, komedi, türk mizahı , karikatür , küfürlü karikatürler , karikatür oku , karikatürler" />
+    <meta property="og:title" content="türkmizah.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Gülmekten Kudurtan Karikatürler" />
+    <meta property="og:url" content="https://türkmizah.com/123" />
+    <meta property="og:image" content="https://türkmizah.com/00123-türkmizah.png" />
+    <meta property="og:article:tag" content="Türk Karikatür" />
+    <meta name="twitter:title" content="türkmizah.com" />
+    <meta name="twitter:description" content="Gülmekten Kudurtan Karikatürler" />
+    <meta name="twitter:image" content="https://türkmizah.com/00123-türkmizah.png" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>türkmizah.com</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            font-family: "PT Serif", serif;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        img {
+            margin: 20px auto;
+            display: block;
+            max-width: 100%;
+            height: auto;
+            max-height: 425px; /* Adjust the value as desired */
+        }
+
+        h1 {
+            color: red;
+        }
+
+        a {
+            color: orange;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        a:checked {
+            color: orange;
+        }
+
+        button {
+            border: none;
+            background: none;
+            color: inherit;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 600px) {
+            img {
+                width: 100vw;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    </style>
+</head>
+<style>
+   
+</style>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center">türkmizah.com</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <h2 id="image-number"></h2>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-auto">
+            <a href="#" id="previous">önceki</a>
+        </div>
+        <div class="col-auto">
+            <a href="#" id="next">sonraki</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <img id="image" src="" alt="" class="img-fluid">
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-auto">
+            <button id="random-button">rastgele</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <h3 style="color: yellow; font-family: 'PT Serif', serif;">Kaliteli Karikatürün Tek Adresi</h3>
+        </div>
+    </div>
+</div>
+
+<script>
+    var images = [
+        { src: "00001-türkmizah.png", number: "#1" },
+        { src: "00002-türkmizah.png", number: "#2" },
+        { src: "00003-türkmizah.png", number: "#3" },
+        { src: "00004-türkmizah.png", number: "#4" },
+        { src: "00005-türkmizah.png", number: "#5" },
+        { src: "00006-türkmizah.png", number: "#6" },
+        { src: "00007-türkmizah.png", number: "#7" },
+        { src: "00008-türkmizah.png", number: "#8" },
+        { src: "00009-türkmizah.png", number: "#9" },
+        { src: "00010-türkmizah.png", number: "#10" },
+        { src: "00011-türkmizah.png", number: "#11" },
+        { src: "00012-türkmizah.png", number: "#12" },
+        { src: "00013-türkmizah.png", number: "#13" },
+        { src: "00014-türkmizah.png", number: "#14" },
+        { src: "00015-türkmizah.png", number: "#15" },
+        { src: "00016-türkmizah.png", number: "#16" },
+        { src: "00017-türkmizah.png", number: "#17" },
+        { src: "00018-türkmizah.png", number: "#18" },
+        { src: "00019-türkmizah.png", number: "#19" },
+        { src: "00020-türkmizah.png", number: "#20" },
+        { src: "00021-türkmizah.png", number: "#21" },
+        { src: "00022-türkmizah.png", number: "#22" },
+        { src: "00023-türkmizah.png", number: "#23" },
+        { src: "00024-türkmizah.png", number: "#24" },
+        { src: "00025-türkmizah.png", number: "#25" },
+        { src: "00026-türkmizah.png", number: "#26" },
+        { src: "00027-türkmizah.png", number: "#27" },
+        { src: "00028-türkmizah.png", number: "#28" },
+        { src: "00029-türkmizah.png", number: "#29" },
+        { src: "00030-türkmizah.png", number: "#30" },
+        { src: "00031-türkmizah.png", number: "#31" },
+        { src: "00032-türkmizah.png", number: "#32" },
+        { src: "00033-türkmizah.png", number: "#33" },
+        { src: "00034-türkmizah.png", number: "#34" },
+        { src: "00035-türkmizah.png", number: "#35" },
+        { src: "00036-türkmizah.png", number: "#36" },
+        { src: "00037-türkmizah.png", number: "#37" },
+        { src: "00038-türkmizah.png", number: "#38" },
+        { src: "00039-türkmizah.png", number: "#39" },
+        { src: "00040-türkmizah.png", number: "#40" },
+        { src: "00041-türkmizah.png", number: "#41" },
+        { src: "00042-türkmizah.png", number: "#42" },
+        { src: "00043-türkmizah.png", number: "#43" },
+        { src: "00044-türkmizah.png", number: "#44" },
+        { src: "00045-türkmizah.png", number: "#45" },
+        { src: "00046-türkmizah.png", number: "#46" },
+        { src: "00047-türkmizah.png", number: "#47" },
+        { src: "00048-türkmizah.png", number: "#48" },
+        { src: "00049-türkmizah.png", number: "#49" },
+        { src: "00050-türkmizah.png", number: "#50" },
+        { src: "00051-türkmizah.png", number: "#51" },
+        { src: "00052-türkmizah.png", number: "#52" },
+        { src: "00053-türkmizah.png", number: "#53" },
+        { src: "00054-türkmizah.png", number: "#54" },
+        { src: "00055-türkmizah.png", number: "#55" },
+        { src: "00056-türkmizah.png", number: "#56" },
+        { src: "00057-türkmizah.png", number: "#57" },
+        { src: "00058-türkmizah.png", number: "#58" },
+        { src: "00059-türkmizah.png", number: "#59" },
+        { src: "00060-türkmizah.png", number: "#60" },
+        { src: "00061-türkmizah.png", number: "#61" },
+        { src: "00062-türkmizah.png", number: "#62" },
+        { src: "00063-türkmizah.png", number: "#63" },
+        { src: "00064-türkmizah.png", number: "#64" },
+        { src: "00065-türkmizah.png", number: "#65" },
+        { src: "00066-türkmizah.png", number: "#66" },
+        { src: "00067-türkmizah.png", number: "#67" },
+        { src: "00068-türkmizah.png", number: "#68" },
+        { src: "00069-türkmizah.png", number: "#69" },
+        { src: "00070-türkmizah.png", number: "#70" },
+        { src: "00071-türkmizah.png", number: "#71" },
+        { src: "00072-türkmizah.png", number: "#72" },
+        { src: "00073-türkmizah.png", number: "#73" },
+        { src: "00074-türkmizah.png", number: "#74" },
+        { src: "00075-türkmizah.png", number: "#75" },
+        { src: "00076-türkmizah.png", number: "#76" },
+        { src: "00077-türkmizah.png", number: "#77" },
+        { src: "00078-türkmizah.png", number: "#78" },
+        { src: "00079-türkmizah.png", number: "#79" },
+        { src: "00080-türkmizah.png", number: "#80" },
+        { src: "00081-türkmizah.png", number: "#81" },
+        { src: "00082-türkmizah.png", number: "#82" },
+        { src: "00083-türkmizah.png", number: "#83" },
+        { src: "00084-türkmizah.png", number: "#84" },
+        { src: "00085-türkmizah.png", number: "#85" },
+        { src: "00086-türkmizah.png", number: "#86" },
+        { src: "00087-türkmizah.png", number: "#87" },
+        { src: "00088-türkmizah.png", number: "#88" },
+        { src: "00089-türkmizah.png", number: "#89" },
+        { src: "00090-türkmizah.png", number: "#90" },
+        { src: "00091-türkmizah.png", number: "#91" },
+        { src: "00092-türkmizah.png", number: "#92" },
+        { src: "00093-türkmizah.png", number: "#93" },
+        { src: "00094-türkmizah.png", number: "#94" },
+        { src: "00095-türkmizah.png", number: "#95" },
+        { src: "00096-türkmizah.png", number: "#96" },
+        { src: "00097-türkmizah.png", number: "#97" },
+        { src: "00098-türkmizah.png", number: "#98" },
+        { src: "00099-türkmizah.png", number: "#99" },
+        { src: "00100-türkmizah.png", number: "#100" },
+        { src: "00101-türkmizah.png", number: "#101" },
+        { src: "00102-türkmizah.png", number: "#102" },
+        { src: "00103-türkmizah.png", number: "#103" },
+        { src: "00104-türkmizah.png", number: "#104" },
+        { src: "00105-türkmizah.png", number: "#105" },
+        { src: "00106-türkmizah.png", number: "#106" },
+        { src: "00107-türkmizah.png", number: "#107" },
+        { src: "00108-türkmizah.png", number: "#108" },
+        { src: "00109-türkmizah.png", number: "#109" },
+        { src: "00110-türkmizah.png", number: "#110" },
+        { src: "00111-türkmizah.png", number: "#111" },
+        { src: "00112-türkmizah.png", number: "#112" },
+        { src: "00113-türkmizah.png", number: "#113" },
+        { src: "00114-türkmizah.png", number: "#114" },
+        { src: "00115-türkmizah.png", number: "#115" },
+        { src: "00116-türkmizah.png", number: "#116" },
+        { src: "00117-türkmizah.png", number: "#117" },
+        { src: "00118-türkmizah.png", number: "#118" },
+        { src: "00119-türkmizah.png", number: "#119" },
+        { src: "00120-türkmizah.png", number: "#120" },
+        
+        // Diğer resimler
+        
+    
+    ];
+
+    var currentImageIndex = Math.floor(Math.random() * images.length);
+    var imageNumber = document.getElementById("image-number");
+
+    function showPreviousImage(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+
+        if (currentImageIndex === 0) {
+            currentImageIndex = images.length - 1;
+        } else {
+            currentImageIndex--;
+        }
+
+        var image = document.getElementById("image");
+        image.src = images[currentImageIndex].src;
+        imageNumber.innerText = images[currentImageIndex].number;
+    }
+
+    function showNextImage(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+
+        if (currentImageIndex === images.length - 1) {
+            currentImageIndex = 0;
+        } else {
+            currentImageIndex++;
+        }
+
+        var image = document.getElementById("image");
+        image.src = images[currentImageIndex].src;
+        imageNumber.innerText = images[currentImageIndex].number;
+    }
+
+    function showRandomImage() {
+        var randomIndex = Math.floor(Math.random() * images.length);
+        var image = document.getElementById("image");
+        image.src = images[randomIndex].src;
+        imageNumber.innerText = images[randomIndex].number;
+        currentImageIndex = randomIndex;
+    }
+
+    var previousButton = document.getElementById("previous");
+    var nextButton = document.getElementById("next");
+    var randomButton = document.getElementById("random-button");
+
+    previousButton.addEventListener("click", showPreviousImage);
+    nextButton.addEventListener("click", showNextImage);
+    randomButton.addEventListener("click", showRandomImage);
+
+    document.addEventListener("keydown", function (event) {
+        if (event.keyCode === 37) {
+            showPreviousImage(event);
+        }
+        if (event.keyCode === 39) {
+            showNextImage(event);
+        }
+    });
+
+    // Initial image number and image loading
+    imageNumber.innerText = images[currentImageIndex].number;
+    var image = document.getElementById("image");
+    image.src = images[currentImageIndex].src;
+</script>
+</body>
+</html>
